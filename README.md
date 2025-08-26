@@ -1,28 +1,28 @@
 # Personal Password Manager with Encryption
 -
 
-# Demo
+## Demo
 -
 
-# Features
+## Features
 -
 
-# Installation
+## Installation
 -
 
-# How to Run
+## How to Run
 -
 
-# Usage
+## Usage
 -
 
-# Tech Stack
+## Tech Stack
 -
 
-# What I learned
+## What I learned
 -
 
-# Current Features
+## Current Features
 -
 
 ## Future Improvements
@@ -34,7 +34,7 @@
 - Search Functionality - Quickly search for a site or account.
 - Copy to Clipboard - Copy passwords to the clipboard auto-clear after a few seconds.
 
-# Bonus
+### Bonus Future Improvements
 - Browser Extension - connect your C# app with a Chrome/Edge plugin.
 - Cloud Sync - store encrypted database in Google Drive/OneDrive.
 - Password generator - random strong password creation.
