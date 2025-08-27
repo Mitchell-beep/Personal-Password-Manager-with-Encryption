@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnAddSite = new Button();
             lblSite = new Label();
             txtSite = new TextBox();
             txtUsername = new TextBox();
@@ -37,15 +37,16 @@
             lblPassword = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnAddSite
             // 
-            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button1.Location = new Point(12, 207);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 30);
-            button1.TabIndex = 0;
-            button1.Text = "Add Site";
-            button1.UseVisualStyleBackColor = true;
+            btnAddSite.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnAddSite.Location = new Point(12, 207);
+            btnAddSite.Name = "btnAddSite";
+            btnAddSite.Size = new Size(100, 30);
+            btnAddSite.TabIndex = 0;
+            btnAddSite.Text = "Add Site";
+            btnAddSite.UseVisualStyleBackColor = true;
+            btnAddSite.Click += btnAdd_Click;
             // 
             // lblSite
             // 
@@ -107,17 +108,16 @@
             Controls.Add(lblUsername);
             Controls.Add(txtSite);
             Controls.Add(lblSite);
-            Controls.Add(button1);
+            Controls.Add(btnAddSite);
             Name = "Form1";
             Text = "My App";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button btnAddSite;
         private Label lblSite;
         private TextBox txtSite;
         private TextBox txtUsername;
