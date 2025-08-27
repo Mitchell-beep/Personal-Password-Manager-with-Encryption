@@ -29,47 +29,88 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            lblSite = new Label();
+            txtSite = new TextBox();
+            txtUsername = new TextBox();
+            lblUsername = new Label();
+            txtPassword = new TextBox();
+            lblPassword = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button1.Location = new Point(12, 344);
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button1.Location = new Point(12, 207);
             button1.Name = "button1";
-            button1.Size = new Size(956, 23);
+            button1.Size = new Size(100, 30);
             button1.TabIndex = 0;
-            button1.Text = "Click Me";
+            button1.Text = "Add Site";
             button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblSite
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(65, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Enter Value";
+            lblSite.AutoSize = true;
+            lblSite.Location = new Point(12, 9);
+            lblSite.Name = "lblSite";
+            lblSite.Size = new Size(26, 15);
+            lblSite.TabIndex = 1;
+            lblSite.Text = "Site";
             // 
-            // textBox1
+            // txtSite
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(12, 27);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(956, 23);
-            textBox1.TabIndex = 2;
+            txtSite.Location = new Point(12, 27);
+            txtSite.Name = "txtSite";
+            txtSite.Size = new Size(300, 23);
+            txtSite.TabIndex = 2;
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(12, 86);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(300, 23);
+            txtUsername.TabIndex = 4;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(12, 68);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(30, 15);
+            lblUsername.TabIndex = 3;
+            lblUsername.Text = "User";
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(12, 154);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(300, 23);
+            txtPassword.TabIndex = 6;
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(12, 136);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(57, 15);
+            lblPassword.TabIndex = 5;
+            lblPassword.Text = "Password";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(980, 415);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ClientSize = new Size(940, 486);
+            Controls.Add(txtPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(lblUsername);
+            Controls.Add(txtSite);
+            Controls.Add(lblSite);
             Controls.Add(button1);
             Name = "Form1";
             Text = "My App";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -77,7 +118,11 @@
         #endregion
 
         private Button button1;
-        private Label label1;
-        private TextBox textBox1;
+        private Label lblSite;
+        private TextBox txtSite;
+        private TextBox txtUsername;
+        private Label lblUsername;
+        private TextBox txtPassword;
+        private Label lblPassword;
     }
 }
